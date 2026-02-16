@@ -208,7 +208,8 @@ LLM_PROXY_SYNC_ENDPOINT = os.environ.get("LLM_PROXY_SYNC_ENDPOINT", "/user/new")
 LLM_PROXY_SYNC_KEY_USER_ID = os.environ.get("LLM_PROXY_SYNC_KEY_USER_ID", "user_id")
 LLM_PROXY_SYNC_KEY_USER_EMAIL = os.environ.get("LLM_PROXY_SYNC_KEY_USER_EMAIL", "user_email")
 LLM_PROXY_SYNC_KEY_USER_ALIAS = os.environ.get("LLM_PROXY_SYNC_KEY_USER_ALIAS", "user_alias")
-
+LLM_PROXY_SYNC_KEY_USER_ROLE = os.environ.get("LLM_PROXY_SYNC_KEY_USER_ROLE", "user_role")
+LLM_PROXY_SYNC_USER_DEFAULT_ROLE = os.environ.get("LLM_PROXY_SYNC_USER_DEFAULT_ROLE", "internal_user")
 ####################################
 # LLM PROXY BUDGET ENFORCEMENT
 ####################################

@@ -13,6 +13,8 @@ from open_webui.env import (
     LLM_PROXY_SYNC_KEY_USER_ID,
     LLM_PROXY_SYNC_KEY_USER_EMAIL,
     LLM_PROXY_SYNC_KEY_USER_ALIAS,
+    LLM_PROXY_SYNC_KEY_USER_ROLE,
+    LLM_PROXY_SYNC_USER_DEFAULT_ROLE
 )
 
 log = logging.getLogger(__name__)
@@ -58,6 +60,7 @@ def sync_user_to_llm_proxy(user: dict) -> bool:
         payload = {
             LLM_PROXY_SYNC_KEY_USER_ID: user_id,
             LLM_PROXY_SYNC_KEY_USER_EMAIL: user_email,
+            LLM_PROXY_SYNC_KEY_USER_ROLE: LLM_PROXY_SYNC_USER_DEFAULT_ROLE,
         }
 
         if LLM_PROXY_SYNC_USER_ALIAS and "name" in user:
